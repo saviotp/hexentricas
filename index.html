@@ -8,18 +8,34 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <title>GRUPO HEXÊNTRICAS</title>
+
+    <!-- Conecta ao Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
     <nav class="menu-fixo">
-        <a href="#quem-somos">QUEM SOMOS</a>
-        <a href="#atividades">ATIVIDADES</a>
-        <a href="#um-de-nos">UM DE NÓS</a>
-        <a href="#contato">CONTATO</a>
+        <div class="link" onclick="scrollToSection('quem-somos')">
+            <span>QUEM SOMOS</span>
+        </div>
+        <div class="link" onclick="scrollToSection('atividades')">
+            <span>ATIVIDADES</span>
+        </div>
+        <div class="link" onclick="scrollToSection('um-de-nos')">
+            <span>UM DE NÓS</span>
+        </div>
+        <div class="link" onclick="scrollToSection('contato')">
+            <span>CONTATO</span>
+        </div>
     </nav>
-    <div id="">
-        <img src="" alt="">
+
+    <div class="hero">
+        <img id="logo" src="" alt="">
     </div>
+
     <div id="quem-somos">
         <h1>GRUPO HEXÊNTRICAS</h1>
         <p>

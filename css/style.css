@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body,
+html {
+    margin: 0;
+    height: 100%;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: var(--h-green);
+    scroll-behavior: smooth;
+}
+
+.menu-fixo {
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+    height: 166px;
+    background-color: var(--h-green);
+}
+
+.menu-fixo>.link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.menu-fixo>.link:hover {
+    background-color: var(--h-sand);
+    cursor: pointer;
+}
+
+.menu-fixo>.link span {
+    color: var(--h-sand);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 28px;
+    transition: color 0.5s;
+}
+
+.menu-fixo>.link:hover span {
+    color: var(--h-green);
+}
+
+.hero {
+    background-image: url("../assets/img/hero.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Variáveis do Site */
+:root {
+    /* Cores Padrão */
+    --h-green: #1c4600;
+    --h-sand: #f2caac;
+    --h-pink: #ef2f87;
+    --h-yellow: #f2f250;
+}
