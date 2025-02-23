@@ -10,9 +10,10 @@ html {
     font-style: normal;
     background-color: var(--h-green);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-.menu-fixo {
+#navbar {
     z-index: 1;
     top: 0;
     position: sticky;
@@ -21,35 +22,43 @@ html {
     justify-content: space-around;
     align-items: center;
     gap: 0px;
-    height: 166px;
+    height: 125px;
     background-color: var(--h-green);
 }
 
-.menu-fixo>.link {
+#navbar .link {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
 }
 
-.menu-fixo>.link:hover {
+#navbar .link:hover {
     background-color: var(--h-sand);
     cursor: pointer;
 }
 
-.menu-fixo>.link span {
+#navbar .link span {
     color: var(--h-sand);
     text-decoration: none;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 20px;
     transition: color 0.5s;
 }
 
-.menu-fixo>.link:hover span {
+#navbar .link:hover span {
     color: var(--h-green);
+}
+
+/* Ícone do menu hambúrguer */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: var(--h-sand);
+    cursor: pointer;
+    padding: 10px;
 }
 
 .capa {
@@ -63,95 +72,139 @@ html {
 }
 
 .secao {
-    padding: 0px 3% 0px 3%;
-    height: auto;
-    overflow: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .secao h1 {
-    color: var(--h-sand);
-    font-size: 80px;
+    font-size: 58px;
     font-weight: 900;
     margin-bottom: 20px;
 }
 
 .secao p {
-    color: var(--h-sand);
-    font-size: 48px;
+    font-size: 28px;
     font-weight: normal;
     margin-bottom: 20px;
 }
 
+.texto {
+    flex: 3;
+    padding: 50px;
+    max-width: 60%;
+}
+
+.imagem {
+    flex: 2;
+    max-width: 40%;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 #quem-somos {
-    padding-right: 0px;
-}
-
-#atividades {
-    padding-left: 0px;
-}
-
-
-.imagem-direita{
-    float: right;
-    margin-left: 3%;
-}
-
-.imagem-esquerda{
-    float: left;
-    margin-right: 3%;
+    color: var(--h-sand);
 }
 
 #atividades {
     background-color: var(--h-pink);
-}
-
-#atividades h1 {
-    color: var(--h-yellow);
-}
-
-#atividades p {
     color: var(--h-yellow);
 }
 
 #um-de-nos {
     background-color: var(--h-orange);
-    padding-right: 0px;
-}
-
-#um-de-nos h1 {
-    color: var(--h-light-sand);
-}
-
-#um-de-nos p {
     color: var(--h-light-sand);
 }
 
 #escalador {
     background-color: var(--h-dark-grey);
-    padding-left: 0px;
-}
-
-#escalador h1 {
-    color: var(--h-light-grey);
-}
-
-#escalador p {
     color: var(--h-light-grey);
 }
 
 #contato {
-    background-color: var(--h-green);
-    padding-right: 0px;
+    background-color: var(--h-sand);
+    color: var(--h-green);
 }
 
-#contato h1 {
-    color: var(--h-sand);
+#contato li {
+    font-size: 28px;
+    font-weight: 500;
 }
 
-#contato p {
-    color: var(--h-sand);
-}
 
+/* Versão responsiva */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--h-green);
+        display: none;
+        transition: display 0.5s;
+        -webkit-box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    #navbar.active {
+        display: flex;
+    }
+
+    #navbar .link {
+        width: 100%;
+        padding: 15px;
+        justify-content: flex-start;
+        padding-left: 30px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        z-index: 2;
+    }
+
+    .capa {
+        background-image: url("../assets/img/capa_mobile.webp");
+        height: 200px;
+    }
+
+    .secao {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .secao h1 {
+        font-size: 10vw;
+    }
+
+    .secao p {
+        font-size: 5vw;
+        text-align: justify;
+    }
+
+    .texto,
+    .imagem {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    #contato .li {
+        font-size: 1vw !important;
+    }
+}
 
 /* Variáveis do Site */
 :root {
