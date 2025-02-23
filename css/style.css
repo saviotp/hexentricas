@@ -64,6 +64,7 @@ html {
 
 .secao {
     padding: 20px;
+    height: 100%;
 }
 
 .secao h1 {
@@ -115,6 +116,21 @@ html {
 #escalador p {
     color: var(--h-light-grey);
 }
+
+#contato {
+    background-color: var(--h-green);
+    height: 20%;
+}
+
+#contato h1 {
+    color: var(--h-sand);
+}
+
+#contato p {
+    color: var(--h-sand);
+}
+
+
 
 /* Variáveis do Site */
 :root {
