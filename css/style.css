@@ -63,22 +63,42 @@ html {
 }
 
 .secao {
-    padding: 20px;
-    height: 100%;
+    padding: 0px 3% 0px 3%;
+    height: auto;
+    overflow: auto;
 }
 
 .secao h1 {
     color: var(--h-sand);
-    font-size: 48px;
+    font-size: 80px;
     font-weight: 900;
     margin-bottom: 20px;
 }
 
 .secao p {
     color: var(--h-sand);
-    font-size: 24px;
+    font-size: 48px;
     font-weight: normal;
     margin-bottom: 20px;
+}
+
+#quem-somos {
+    padding-right: 0px;
+}
+
+#atividades {
+    padding-left: 0px;
+}
+
+
+.imagem-direita{
+    float: right;
+    margin-left: 3%;
+}
+
+.imagem-esquerda{
+    float: left;
+    margin-right: 3%;
 }
 
 #atividades {
@@ -95,6 +115,7 @@ html {
 
 #um-de-nos {
     background-color: var(--h-orange);
+    padding-right: 0px;
 }
 
 #um-de-nos h1 {
@@ -107,6 +128,7 @@ html {
 
 #escalador {
     background-color: var(--h-dark-grey);
+    padding-left: 0px;
 }
 
 #escalador h1 {
@@ -119,7 +141,7 @@ html {
 
 #contato {
     background-color: var(--h-green);
-    height: 20%;
+    padding-right: 0px;
 }
 
 #contato h1 {
@@ -129,7 +151,6 @@ html {
 #contato p {
     color: var(--h-sand);
 }
-
 
 
 /* Variáveis do Site */
