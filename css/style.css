@@ -52,15 +52,69 @@ html {
     color: var(--h-green);
 }
 
-.hero {
-    background-image: url("../assets/img/hero.png");
+.capa {
+    background-image: url("../assets/img/capa.webp");
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
+.secao {
+    padding: 20px;
+}
+
+.secao h1 {
+    color: var(--h-sand);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.secao p {
+    color: var(--h-sand);
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#atividades {
+    background-color: var(--h-pink);
+}
+
+#atividades h1 {
+    color: var(--h-yellow);
+}
+
+#atividades p {
+    color: var(--h-yellow);
+}
+
+#um-de-nos {
+    background-color: var(--h-orange);
+}
+
+#um-de-nos h1 {
+    color: var(--h-light-sand);
+}
+
+#um-de-nos p {
+    color: var(--h-light-sand);
+}
+
+#escalador {
+    background-color: var(--h-dark-grey);
+}
+
+#escalador h1 {
+    color: var(--h-light-grey);
+}
+
+#escalador p {
+    color: var(--h-light-grey);
+}
 
 /* Variáveis do Site */
 :root {
@@ -69,4 +123,8 @@ html {
     --h-sand: #f2caac;
     --h-pink: #ef2f87;
     --h-yellow: #f2f250;
+    --h-orange: #c84e26;
+    --h-light-sand: #ffdbc4;
+    --h-dark-grey: #393b3a;
+    --h-light-grey: #dfddd0;
 }
