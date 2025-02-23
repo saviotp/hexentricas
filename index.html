@@ -17,7 +17,11 @@
 </head>
 
 <body>
-    <nav class="menu-fixo">
+    <!-- Ícone do menu hambúrguer -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
         <div class="link" onclick="scrollToSection('quem-somos')">
             <span>QUEM SOMOS</span>
         </div>
@@ -35,74 +39,92 @@
         </div>
     </nav>
 
-    <div class="capa">
-        <img id="logo" src="" alt="">
-    </div>
+    <div class="capa"></div>
 
-    <div class="secao" id="quem-somos">
-
-        <img class="imagem-direita" src="assets/img/quem-somos.webp" alt="">
-
-        <h1>GRUPO HEXÊNTRICAS</h1>
-        <p>
-            Somos as Hexêntricas! Um coletivo que quer fazer da escalada um ambiente inclusivo, engajado, revolucionário
-            e acolhedor para todas as pessoas, sejam elas divergentes ou neuro-divergentes, membros da comunidade
-            LGBTQIAPN+ ou não, de diferentes raças e classes sociais. Por isso, acreditamos na força e na potência de
-            sonhar junt@s.
-        </p>
-        
-    </div>
-
-    <div class="secao" id="atividades">
-
-        <img class="imagem-esquerda" src="assets/img/atividades.webp" alt="">
-
-        <h1>NOSSAS CONQUISTAS</h1>
-        <p>
-            Como grupo de escalada, realizamos atividades que visam a inclusão e a diversidade no esporte. Além disso,
-            promovemos eventos e encontros para que tod@s possam se sentir acolhid@s e representad@s. Participamos dos
-            principais eventos de escalada realizados no Ceará, como a Abertura de Temporada de Montanhismo no Ceará
-            (ATM) e o Encontro de Escaladores do Nordeste (EENe), participando de sua organização para a realização no
-            ano de 2026.
-        </p>
-    </div>
-
-    <div class="secao" id="um-de-nos">
-        <img class="imagem-direita" src="assets/img/um-de-nos.webp" alt="">
-        <h1>SEJA HEXÊNTRICO</h1>
-        <p>
-            Participe de nosso grupo de escalada para promover um ambiente mais inclusivo e diverso. Seja você também
-            uma Hexêntrica! Junte-se a nós e faça parte de um coletivo que acredita na força da união e da diversidade.
-            Com a sua participação, podemos fazer a diferença e transformar o mundo da escalada em um lugar melhor para
-            tod@s.
-        </p>
-        <div>
-            <img src="" alt="">
+    <section class="secao" id="quem-somos">
+        <div class="texto">
+            <h1>GRUPO HEXÊNTRICAS</h1>
+            <p>
+                Somos as Hexêntricas! Um coletivo que quer fazer da escalada um ambiente inclusivo, engajado,
+                revolucionário
+                e acolhedor para todas as pessoas, sejam elas divergentes ou neuro-divergentes, membros da comunidade
+                LGBTQIAPN+ ou não, de diferentes raças e classes sociais. Por isso, acreditamos na força e na potência
+                de
+                sonhar junt@s.
+            </p>
         </div>
-    </div>
-
-    <div class="secao" id="escalador">
-        <img class="imagem-esquerda" src="assets/img/ja-e-escalador.webp" alt="">
-        <h1>JÁ É UM@A ESCALADOR@?</h1>
-        <p>
-            Como você já participa da comunidade de escalada, temos um convite especial para você: juntando-se
-            ao nosso grupo, poderá participar nas atividades que promovemos e ajudar a tornar a escalada um esporte
-            mais inclusivo e diverso. Entrando em contato conosco, faremos questão de enviá-l@ um convite especial
-            para participar de nossas atividades e eventos.
-        </p>
-        <div>
-            <img src="" alt="">
+        <div class="imagem">
+            <img class="imagem-direita" src="assets/img/quem-somos.webp" alt="">
         </div>
-    </div>
+    </section>
 
-    <div class="secao" id="contato">
-        <img class="imagem-direita" src="assets/img/contato.webp" alt="">
-        <h1>CONTATO</h1>
-        <p>Para firmar parceiras, contate:</p>
-        <p>Email: email@gmail.com</p>
-        <p>Endereço: Rua</p>
-        <p>Organizadores Débora e Vanessa</p>
-    </div>
+    <section class="secao" id="atividades">
+
+        <div class="imagem">
+            <img class="imagem-esquerda" src="assets/img/atividades.webp" alt="">
+        </div>
+        <div class="texto">
+            <h1>NOSSAS CONQUISTAS</h1>
+            <p>
+                Como grupo de escalada, realizamos atividades que visam a inclusão e a diversidade no esporte. Além
+                disso,
+                promovemos eventos e encontros para que tod@s possam se sentir acolhid@s e representad@s. Participamos
+                dos
+                principais eventos de escalada realizados no Ceará, como a Abertura de Temporada de Montanhismo no Ceará
+                (ATM) e o Encontro de Escaladores do Nordeste (EENe), participando de sua organização para a realização
+                no
+                ano de 2026.
+            </p>
+        </div>
+    </section>
+
+    <section class="secao" id="um-de-nos">
+        <div class="texto">
+            <h1>SEJA HEXÊNTRICO</h1>
+            <p>
+                Participe de nosso grupo de escalada para promover um ambiente mais inclusivo e diverso. Seja você
+                também
+                uma Hexêntrica! Junte-se a nós e faça parte de um coletivo que acredita na força da união e da
+                diversidade.
+                Com a sua participação, podemos fazer a diferença e transformar o mundo da escalada em um lugar melhor
+                para
+                tod@s.
+            </p>
+        </div>
+        <div class="imagem">
+            <img class="imagem-direita" src="assets/img/um-de-nos.webp" alt="">
+        </div>
+    </section>
+
+    <section class="secao" id="escalador">
+        <div class="imagem">
+            <img class="imagem-esquerda" src="assets/img/ja-e-escalador.webp" alt="">
+        </div>
+        <div class="texto">
+            <h1>JÁ É UM@ ESCALADOR@?</h1>
+            <p>
+                Como você já participa da comunidade de escalada, temos um convite especial para você: juntando-se
+                ao nosso grupo, poderá participar nas atividades que promovemos e ajudar a tornar a escalada um esporte
+                mais inclusivo e diverso. Entrando em contato conosco, faremos questão de enviá-l@ um convite especial
+                para participar de nossas atividades e eventos.
+            </p>
+        </div>
+    </section>
+
+    <section class="secao" id="contato">
+        <div class="texto">
+            <h1>CONTATO</h1>
+            <p>Para firmar parceiras, contate:</p>
+            <ul>
+                <li>Email: email@gmail.com</li>
+                <li>Endereço: Rua</li>
+                <li>Organizadores: Débora e Vanessa</li>
+            </ul>
+        </div>
+        <div class="imagem">
+            <img class="imagem-direita" src="assets/img/contato.webp" alt="">
+        </div>
+    </section>
 </body>
 
 </html>
