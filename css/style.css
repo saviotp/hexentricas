@@ -135,6 +135,25 @@ html {
     font-weight: 500;
 }
 
+#contato a,
+a:visited,
+a:active,
+a:focus {
+    color: var(--h-green);
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+    color: var(--h-orange);
+}
+
+.icon {
+    position: relative;
+    top: 4px;
+}
+
 
 /* Versão responsiva */
 @media (max-width: 768px) {
